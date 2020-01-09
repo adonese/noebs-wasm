@@ -1,8 +1,7 @@
-# 👷 `worker-template` Hello World
+# 👷 `noebs wasm interface for encryption
 
-A template for kick starting a Cloudflare worker project.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+A ready rsa encrypt for your next frontend project. It can be integrated to your angular, react, or any js project. Or you can host it on a cloud provider as a serverless app.
 
 #### Wrangler
 
@@ -15,3 +14,13 @@ wrangler generate projectname https://github.com/cloudflare/worker-template
 #### Serverless
 
 To deploy using serverless add a [`serverless.yml`](https://serverless.com/framework/docs/providers/cloudflare/) file.
+
+
+##### Building go app
+
+```shell
+# go to wasm dir
+$ cd wasm
+$ GOOS=js GOARCH=wasm go build -o main.wasm
+```
+
